@@ -1,0 +1,1 @@
+docker run --rm -it --device=/dev/astra:/dev/astra -v /dev/bus/usb:/dev/bus/usb astra:kinetic
