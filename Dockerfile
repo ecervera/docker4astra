@@ -15,3 +15,6 @@ SHELL ["/bin/bash", "-c"]
 
 RUN source /opt/ros/kinetic/setup.bash && catkin_make -j1
 
+ADD astra_entrypoint.sh /astra_entrypoint.sh
+ENTRYPOINT ["/astra_entrypoint.sh"]
+CMD ["roslaunch", "astra_camera", "astra.launch"]
